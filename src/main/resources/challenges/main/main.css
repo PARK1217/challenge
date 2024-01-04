@@ -1,0 +1,201 @@
+#mainWrap {
+    width: 100%;
+}
+#mainWrap header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9cc1e4;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.container{
+    width: 1200px;
+}
+#mainWrap .headerWrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+#mainWrap .headerWrap .nav1 {
+    display: flex;
+    width: 60%;
+}
+#mainWrap .headerWrap .nav1 >div {
+    width: 24%;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+#mainWrap .headerWrap .nav1 >div:hover{
+    color: #fff;
+}
+#mainWrap .headerWrap .nav1 >div:first-child{
+    margin-left: 0;
+}
+#mainWrap .headerWrap .nav2 {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+#mainWrap .headerWrap .nav2 > div {
+    width: 48%;
+    padding: 10px;
+    text-align: center;
+}
+#mainWrap .headerWrap .nav2 .logout {
+    background-color: #0D99FF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#mainWrap .headerWrap .nav2 .logout:hover{
+    color: #fff;
+}
+#mainWrap .section1 {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mainWrap .section1 .title {
+    padding-top: 40px;
+    font-size: 4vw;
+}
+#mainWrap .section2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainWrap .section2 .section2Wrap {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+#mainWrap .section2 .section2Wrap >div {
+    width: 50%;
+}
+#mainWrap .section2 .section2Wrap .section2-inner1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#mainWrap .section2 .section2Wrap .section2-inner1 h2 {
+    font-size: 2vw;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+#mainWrap .section2 .section2Wrap .section2-inner1 p {
+    font-size: 1.3vw;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+#mainWrap .section2 .section2Wrap .section2-inner1 a{
+    padding: 15px 20px;
+    background-color: #EA5656;
+    display: inline-block;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1vw;
+}
+#mainWrap .section2 .section2Wrap .section2-inner1 a:hover {
+    scale: 1.2;
+}
+#mainWrap .section2 .section2Wrap .section2-inner2 {
+}
+#mainWrap .section2 .section2Wrap .section2-inner2 .imgWrap {
+    width: 100%;
+}
+#mainWrap .section2 .section2Wrap .section2-inner2 .imgWrap img {
+    width: 100%;
+    object-fit: cover;
+}
+#mainWrap .section3 {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mainWrap .section3 .container {
+    border: 1px solid #000;
+    padding: 20px;
+}
+#mainWrap .section3 h3 {
+    font-size: 1.5vw;
+   margin-bottom: 40px;
+}
+#mainWrap .section3 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mainWrap .section3 .inner >div {
+    width: 32.3333%;
+    height: 200px;
+    text-align: center;
+    border: 1px solid #000;
+}
+#mainWrap .section3 a {
+    margin-top: 20px;
+    padding: 15px 20px;
+    float: right;
+    text-align: right;
+    background-color: #EA5656;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1vw;
+}
+#mainWrap .section3 a:hover{
+    scale: 1.2;
+}
+#mainWrap .section4 {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mainWrap .section4 .container{
+    border: 1px solid #000;
+    padding: 20px;
+}
+#mainWrap .section4 h4 {
+    font-size: 1.5vw;
+    margin-bottom: 40px;
+}
+#mainWrap .section4 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mainWrap .section4 .inner > div {
+    width: 20%;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #000;
+    text-align: center;
+}
+#mainWrap .section4 .inner > div:hover{
+    scale: 1.1;
+}
+#mainWrap .section4 .inner > div >h2 {
+    font-size: 1vw;
+    margin-bottom: 20px;
+}
+#mainWrap .section4 .inner > div > p {
+    font-size: 0.7vw;
+}

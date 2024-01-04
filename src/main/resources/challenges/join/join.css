@@ -1,0 +1,143 @@
+input[type="checkbox"]{
+    width: 30px; /*Desired width*/
+    height: 20px; /*Desired height*/
+    cursor: pointer;
+}
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    height: 50px;
+}
+
+#wrap{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+}
+#wrap .container {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+#wrap .container .logo {
+    width: 50%;
+    height: inherit;
+    background: #9bbddd;
+    overflow: hidden;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#wrap .container .inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#wrap .container .inner .desc {
+    color: #fff;
+    padding-bottom: 60px;
+}
+#wrap .container .inner .desc h2 {
+    font-size: 1.5em;
+    position: relative;
+}
+#wrap .container .inner .desc h2::before{
+    content: "";
+    display: block;
+    width: 40%;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+#wrap .container .inner .desc p {
+    padding-top: 50px;
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+#wrap .container .login {
+    width: 50%;
+    height: inherit;
+    border: 1px solid #222;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-sizing: border-box;
+    border-left: none;
+}
+#wrap .container .login form {
+    padding: 30px;
+    width: 100%;
+}
+#wrap .container .login .login_header {
+    width: 100%;
+    /*border: 1px solid #000;*/
+    margin-top: 50px;
+}
+#wrap .container .login .login_header h2 {
+    width: 30%;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-weight: normal;
+    position: relative;
+}
+#wrap .container .login .login_header h2::before{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 5px;
+    background: #00bfba;
+    position: absolute;
+    left: 40%;
+    bottom: -15px;
+}
+#wrap .container .login .login_header label {
+    margin: 2px 0;
+}
+#wrap .container .login .login_header .nickwrap {
+    margin-top: 40px;
+}
+#wrap .container .login .login_header a {
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #247CFF;
+    border-radius: 10px;
+    color: #000;
+    font-size: 1vw;
+    color: #fff;
+}
+#wrap .container .login .login_header a:hover {
+    scale: 1.1;
+}
+#wrap .container .login .login_header .repassword {
+    margin-top: 10px;
+}
+#wrap .container .login .login_header button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #247CFF;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+}
+#wrap .container .login .login_header button:hover{
+    background-color: #1b68dd;
+}

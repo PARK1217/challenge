@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>챌린지</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+    <script>
+        $(function(){
+            loginInit1()
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="logo">
+                <div class="inner">
+                    <div class="desc">
+                        <h2 class="h2_desc">챌린지 약속이행 시스템</h2>
+                        <p class="p_desc">주어진 기간 동안 특정 목표를 달성해 주세요</p>
+                    </div>
+                </div>
+            </div>
+            <div class="login">
+                <form method="post">
+                    <div class="login_header">
+                        <h2>LOGIN</h2>
+                    </div>
+                    <div class="login_main">
+                        <label for="id" class="label">ID (E메일)</label>
+                        <div class="input_inner">
+                            <input type="text" maxlength="50" name="id" id="id" class="input_id" placeholder="Enter User ID (Email Address)...">
+                        </div>
+                        <label for="password" class="label">패스워드</label>
+                        <div class="input_inner">
+                            <input type="password" maxlength="50" name="password" id="password" class="input_pw" placeholder="Enter Password...">
+                        </div>
+                        <!-- <div class="input_check">
+                            <label for="check" class="check_label"><span> ID 기억하기</span></label>
+                            <input type="checkbox" id="check" name="check" class="input_check">
+                        </div> -->
+                        <div class="main_desc">
+                            <p>※ ID,PW 분실 시 관리자에게 문의해주세요.</p>
+                            <span>-운용담당:test@naver.com</span>
+                        </div>
+                        <div class="login_button">
+                            <button class="AuthBtn">로그인</button>
+                        </div>
+                        <!-- <div class="auth" style="display: none">
+                            <label for="authNumber">인증번호</label>
+                            <input type="text" maxlength="50" name="authNumber" id="authNumber" placeholder="인증번호 입력">
+                            <button class="loginBtn">로그인</button>
+                        </div> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+        <source src="/images/bgwhWave.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
+https://www.figma.com/file/JtIiqd8kmorWap4zNcbyn6/Untitled?type=design&node-id=1-495&mode=dev

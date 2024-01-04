@@ -1,0 +1,290 @@
+#challengeDetailWrap {
+    width: 100%;
+}
+
+#challengeDetailWrap header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#challengeDetailWrap .headerWrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+#challengeDetailWrap .headerWrap .nav1 {
+    display: flex;
+    width: 60%;
+}
+
+#challengeDetailWrap .headerWrap .nav1>div {
+    width: 24%;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+#challengeDetailWrap .headerWrap .nav1>div:hover {
+    color: #aaa;
+}
+
+#challengeDetailWrap .headerWrap .nav1>div:first-child {
+    margin-left: 0;
+}
+
+#challengeDetailWrap .headerWrap .nav2 {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#challengeDetailWrap .headerWrap .nav2>div {
+    width: 48%;
+    padding: 10px;
+    text-align: center;
+}
+
+#challengeDetailWrap .headerWrap .nav2 .logout {
+    background-color: #0D99FF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#challengeDetailWrap .headerWrap .nav2 .logout:hover {
+    color: #fff;
+}
+#challengeDetailWrap main {
+    margin-top: 80px; 
+}
+#challengeDetailWrap main .chName {
+    width: 100%;
+    
+}
+#challengeDetailWrap main .chName h2 {
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2vw;
+    width: 100%;
+}
+#challengeDetailWrap main .chName .initCount {
+    text-align: right;
+}
+#challengeDetailWrap main .chName .initCount span {
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+#challengeDetailWrap main .chName .initCount span em {
+    padding: 0 10px;
+}
+#challengeDetailWrap main .DetailList .startDate {
+    text-align: center;
+    font-size: 1vw;
+}
+#challengeDetailWrap main .peopleListWrap{
+    width: 100%;
+} 
+#challengeDetailWrap main .peopleListWrap h3 {
+    display: block;
+    margin: 30px 0;
+    font-size: 1vw;
+    font-weight:normal;
+}
+#challengeDetailWrap main .peopleListWrap .bar {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #777;
+    box-sizing: content-box;
+    position: relative;
+}
+#challengeDetailWrap main .peopleListWrap .bar .barCheck {
+    width: 100%;
+    height: 50px;
+    background-color: #0D99FF;
+}
+#challengeDetailWrap main .peopleListWrap .bar .barCheck span {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+}
+#challengeDetailWrap main .peopleListWrap .bar .barCheck span:last-child{
+    top: 25px;
+}
+#challengeDetailWrap main .peopleListWrap .btnWrap {
+    margin-top: 10px;
+    text-align: right;
+}
+#challengeDetailWrap main .peopleListWrap .btnWrap button {
+    padding: 5px 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+#challengeDetailWrap main .peopleListWrap .btnWrap button:last-child {
+    position: relative;
+    padding: 5px 30px 5px 15px;
+}
+#challengeDetailWrap main .peopleListWrap .btnWrap button:last-child::before {
+    content: "";
+    display: block;
+    background-image: url(pet.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+}
+#challengeDetailWrap main .peopleListWrap .watchDat a {
+    position: relative;
+    padding-left: 17px;
+    line-height: 1;
+}
+#challengeDetailWrap main .peopleListWrap .watchDat a::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(down.svg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#challengeDetailWrap main .peopleListWrap .watchDat a:hover::before{
+    background-image: url(up.svg);
+}
+#challengeDetailWrap main .peopleListWrap .watchDat .datWrap{
+    padding: 15px;
+}
+#challengeDetailWrap main .peopleListWrap .watchDat .datWrap .dat{
+    width: 100%;
+    margin-top: 10px;
+    
+}
+#challengeDetailWrap main .peopleListWrap .watchDat .datWrap span{
+    border-bottom: 2px solid #aaa;
+    font-size: 20px;
+    padding: 5px 0;
+    text-align: center;
+}
+#challengeDetailWrap main .peopleListWrap .watchDat .datWrap em {
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 3px;
+    font-size: 15px;
+}
+#challengeDetailWrap main .peopleListWrap .page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+#challengeDetailWrap main .peopleListWrap .page >div {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    outline: 5px solid transparent;
+    border-right: none;
+}
+#challengeDetailWrap main .peopleListWrap .page >div:last-child{
+    border-right: 1px solid #000;
+}
+#challengeDetailWrap .modalPop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+#challengeDetailWrap .modalPop .modalPopWrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border: 1px solid #000;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 20px;
+}
+#challengeDetailWrap .modalPop .modalPopWrap h4 {
+    display: block;
+    padding: 10px 0;
+    font-size: 25px;
+    width: 80%;
+    border-bottom: 1px solid #000;
+}
+
+#challengeDetailWrap .modalPop .modalPopWrap p {
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+#challengeDetailWrap .modalPop .modalPopWrap p span {
+    font-weight: normal;
+    font-size: 16px;
+    display: inline-block;
+    padding-top: 3px;
+    padding-left: 15px;
+    color: rgb(240, 6, 29);
+}
+#challengeDetailWrap .modalPop .modalPopWrap textarea{
+    resize: none;
+    padding: 2px;
+    height: 100px;
+}
+#challengeDetailWrap .modalPop .modalPopWrap .btnWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#challengeDetailWrap .modalPop .modalPopWrap a {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+#challengeDetailWrap .modalPop .modalPopWrap a:last-child {
+    margin-left: 10px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}

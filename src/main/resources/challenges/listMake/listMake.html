@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>챌린지 생성</title>
+    <link rel="stylesheet" type="text/css" href="listMake..css">
+    <link rel="stylesheet" type="text/css" href="../reset.css">
+    <link rel="stylesheet" type="text/css" href="date.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                showOn: "button",
+                buttonImage: "date.svg",
+                buttonImageOnly: true,
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],	
+                monthNames: ['1월','2월','3월','4월','5월','6월', '7월','8월','9월','10월','11월','12월'],		
+                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                beforeShow: function (input) {
+                    var i_offset = $(input).offset(); //클릭된 input의 위치값 체크		    
+                    setTimeout(function () {
+                        $(".chStartDateWrap").css({'position': 'relative'})
+                        // $('#ui-datepicker-div').css({'left': '50%' });
+                    })
+                }
+            });
+        });
+    </script>
+    <script src="listMake.js"></script>
+</head>
+
+<body>
+    <div id="listMakeWrap">
+        <header>
+            <div class="container">
+                <div class="headerWrap">
+                    <nav class="nav1">
+                        <div>홈 로고</div>
+                        <div>챌린지</div>
+                        <!-- <div>리뷰</div>
+                        <div>커뮤니티</div> -->
+                        <div>FAQ</div>
+                    </nav>
+                    <div class="nav2">
+                        <div>로그인</div>
+                        <div class="logout">회원가입</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h2>챌린지 생성</h2>
+                <div class="chNameWrap">
+                    <label for="chName">챌린지 명</label>
+                    <input type="text" id="chName" name="chName" maxlength="20">
+                    <a href="#" class="chNameBtn">확인</a>
+                    <p>최대 20자, 영문, 숫자, 한글단어만 가능</p>
+                </div>
+                <div class="chNumberWrap">
+                    <label for="chNumber">정원</label>
+                    <input type="number" id="chNumber" name="chNumber" max="10" disabled>
+                    <span>+</span>
+                    <span>-</span>
+                    <p>정원은 10명까지 설정 가능</p>
+                </div>
+                <div class="chIntroductoryWrap">
+                    <label for="chNumber">챌린지 소개</label>
+                    <textarea id="chIntroductory" name="chIntroductory" maxlength="50" rows="15"></textarea>
+                </div>
+                <div class="chStartDateWrap">
+                    <label for="chNumber">시작 날짜</label>
+                    <input type="text" id="datepicker" name="chStartDate">
+                    <p>현재 시작날짜는 월요일만 가능 차후 업데이트 예정</p>
+                </div>
+                <div class="chEndDateWrap">
+                    <label for="chNumber">종료 날짜</label>
+                    <input type="text" id="chStartDateWrap" name="chStartDateWrap" maxlength="50" disabled>
+                    <p>종료 날짜는 시작일 기준 4주로 자동생성됩니다.</p>
+                </div>
+                <div class="btnWrap">
+                    <a href="#">생성</a>
+                    <a href="#">취소</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

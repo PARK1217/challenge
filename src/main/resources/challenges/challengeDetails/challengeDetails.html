@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목표만들기</title>
+    <link rel="stylesheet" href="challengeDetails.css">
+    <link rel="stylesheet" href="../reset.css">
+    <script src="challengeDetails.js"></script>
+</head>
+
+<body>
+    <div id="challengeDetailWrap" class="main">
+        <header>
+            <div class="container">
+                <div class="headerWrap">
+                    <nav class="nav1">
+                        <div>홈 로고</div>
+                        <div>챌린지</div>
+                        <!-- <div>리뷰</div>
+                        <div>커뮤니티</div> -->
+                        <div>FAQ</div>
+                    </nav>
+                    <div class="nav2">
+                        <div>로그인</div>
+                        <div class="logout">회원가입</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="chName">
+                    <h2>챌린지 이름</h2>
+                    <div class="initCount">
+                        <span>참여인원 <em></em> / 5</span>
+                    </div>
+                </div>
+                <div class="DetailList">
+                    <h3 class="startDate">2023/12/21 <em>목요일</em></h3>
+                </div>
+                <div class="peopleListWrap">
+                    <div class="peopleList">
+                        <h3><em>1.</em>name</h3>
+                        <div class="bar">
+                            <div class="barCheck">
+                                <span>100%</span>
+                                <span>01:00:00</span>
+                            </div>
+                        </div>
+                        <div class="btnWrap">
+                            <button class="test">조회</button>
+                            <button class="modalOpen">응원하기</button>
+                        </div>
+                        <div class="watchDat">
+                            <a href="#">응원보기</a>
+                            <div class="datWrap">
+                                <div class="dat">
+                                    <span>코폰 <em>열심히 실천하시는 모습 멋있습니다! </em></span>
+                                </div>
+                                <div class="dat">
+                                    <span>코폰 <em>열심히 실천하시는 모습 멋있습니다! </em></span>
+                                </div>
+                            </div>
+                            <div class="page">
+                                <div>&lt;&lt;</div>
+                                <div>&lt;</div>
+                                <div>1</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                                <div>6</div>
+                                <div>7</div>
+                                <div>8</div>
+                                <div>&gt;</div>
+                                <div>&gt;&gt;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="peopleList">
+                        <h3><em>2.</em>name</h3>
+                        <div class="bar">
+                            <div class="barCheck" style="width: 20%; background-color: aqua;">
+                                <span>20%</span>
+                                <span>01:00:00</span>
+                            </div>
+                        </div>
+                        <div class="btnWrap">
+                            <button>조회</button>
+                            <button class="modalOpen">응원하기</button>
+                        </div>
+                        <div class="watchDat">
+                            <a href="#">응원보기</a>
+                            <div class="datWrap">
+                                <div class="dat">
+                                    <span>코폰 <em>열심히 실천하시는 모습 멋있습니다! </em></span>
+                                </div>
+                                <div class="dat">
+                                    <span>코폰 <em>열심히 실천하시는 모습 멋있습니다! </em></span>
+                                </div>
+                            </div>
+                            <div class="page">
+                                <div>&lt;&lt;</div>
+                                <div>&lt;</div>
+                                <div>1</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                                <div>6</div>
+                                <div>7</div>
+                                <div>8</div>
+                                <div>&gt;</div>
+                                <div>&gt;&gt;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modalPop">
+                <div class="modalPopWrap">
+                    <h4>name</h4>
+                    <p>응원쓰기 <span>최대 20자, 이모티콘 사용불가</span></p>
+                    <textarea name="popwrite" id="popwrite" cols="30" rows="10" maxlength="20" placeholder="응원을 말을 써주세요"></textarea>
+                    <div class="btnWrap">
+                        <a href="#">응원하기</a>
+                        <a href="#" class="cancel">취소하기</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const modalOpen = document.querySelectorAll(".peopleList .modalOpen");
+        const modal = document.querySelector(".modalPop")
+        const cancel = modal.querySelector(".cancel");
+
+        modalOpen.forEach(el => {
+            el.addEventListener("click",()=>{
+                modal.style.display= "block";
+            })
+        })
+
+        cancel.addEventListener("click",()=>{
+            modal.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>

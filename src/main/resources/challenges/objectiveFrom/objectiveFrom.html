@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>목표만들기</title>
+  <link rel="stylesheet" href="objectiveFrom.css">
+  <link rel="stylesheet" href="../reset.css">
+  <script src="objectiveFrom.js"></script>
+</head>
+
+<body>
+  <div id="objectiveFromWrap" class="main">
+    <header>
+      <div class="container">
+        <div class="headerWrap">
+          <nav class="nav1">
+            <div>홈 로고</div>
+            <div>챌린지</div>
+            <!-- <div>리뷰</div>
+                        <div>커뮤니티</div> -->
+            <div>FAQ</div>
+          </nav>
+          <div class="nav2">
+            <div>로그인</div>
+            <div class="logout">회원가입</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <label for="objectName">목표이름</label>
+        <input type="text" id="objectName" name="objectName" placeholder="목표이름을 입력해주세요">
+
+        <h3>색상</h3>
+        <div class="colorSelect">
+          <div><em data-color="#FFC7C2"></em></div>
+          <div><em data-color="#8AB9FF"></em></div>
+          <div><em data-color="#75D7F0"></em></div>
+          <div><em data-color="#8FFFB5"></em></div>
+          <div><em data-color="#D9B8FF"></em></div>
+          <div><em data-color="#0D99FF"></em></div>
+          <div><em data-color="#FB7171"></em></div>
+          <div><em data-color="#14AE5C"></em></div>
+          <div><em data-color="#FF0000"></em></div>
+          <div><em data-color="#FFD233"></em></div>
+          <div><em data-color="#EA5656"></em></div>
+          <div><em data-color="#087A3E"></em></div>
+          <div><em data-color="#9747FF"></em></div>
+          <div><em data-color="#FFC470"></em></div>
+          <div><em data-color="#D7EBF9"></em></div>
+          <div><em data-color="#80D789"></em></div>
+          <div><em data-color="#EA19EE"></em></div>
+          <div><em data-color="#A96300"></em></div>
+          <div><em data-color="#FFF6A0"></em></div>
+          <div><em data-color="#000000"></em></div>
+        </div>
+
+        <label for="objectTime">목표시간</label>
+        <input type="time" name="objectTime" id="objectTime" placeholder="시간을 설정해 주세요">
+
+        <div class="labelEm">
+          <label for="oneDayTime">하루 최소 달성 목표시간</label><span class="oneDayModalOpen">하루 최소 달성 목표시간이란?</em>
+        </div>
+        <input type="time" name="oneDayTime" id="oneDayTime" placeholder="시간을 설정해 주세요">
+
+        <div class="selectlistWrap">
+          <h5>기간</h5>
+          <div class="termWrap">
+            <a href="#">매주반복</a>
+            <a href="#">하루만</a>
+          </div>
+          <div class="date">
+            <input type="checkbox" id="selectDateBtn1">
+            <label for="selectDateBtn1">월</label>
+            <input type="checkbox" id="selectDateBtn2">
+            <label for="selectDateBtn2">화</label>
+            <input type="checkbox" id="selectDateBtn3">
+            <label for="selectDateBtn3">수</label>
+            <input type="checkbox" id="selectDateBtn4">
+            <label for="selectDateBtn4">목</label>
+            <input type="checkbox" id="selectDateBtn5">
+            <label for="selectDateBtn5">금</label>
+            <input type="checkbox" id="selectDateBtn6">
+            <label for="selectDateBtn6">토</label>
+            <input type="checkbox" id="selectDateBtn7">
+            <label for="selectDateBtn7">일</label>
+          </div>
+          <div class="selectWrap">
+            <input type="checkbox" class="Allselect">
+            <span>전체선택</span>
+            <input type="checkbox" class="Weekselect">
+            <span>평일만</span>
+          </div>
+          <div class="btnWrap">
+            <a href="#">생성</a>
+            <a href="#">취소</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="objective-modal" style="display: none;">
+    <div>
+      하루동안 최소한으로 실행할 목표시간입니다. 이 시간은 <em class="modalOpen">내 챌린지 보기</em>에서 1일간 최소 달성 목표시간으로 합계됩니다.
+      <a href="#">확인</a>
+    </div>
+    
+  </div>
+  <script>
+    const colors = document.querySelectorAll(".colorSelect > div > em");
+    const modalOpen = document.querySelector(".oneDayModalOpen");
+    const modal = document.querySelector(".objective-modal");
+    const modalClose = document.querySelector(".objective-modal a");
+
+    colors.forEach((el)=>{
+      const color = el.getAttribute('data-color');
+      el.style.backgroundColor = color
+    })
+
+    modalOpen.addEventListener("click",()=>{
+      modal.style.display ="block";
+    })
+
+    modalClose.addEventListener("click",()=>{
+      modal.style.display ="none";
+    })
+
+
+  </script>
+</body>
+
+</html>

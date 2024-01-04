@@ -1,0 +1,402 @@
+#myChallengeWrap {
+    width: 100%;
+}
+
+#myChallengeWrap header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#myChallengeWrap .headerWrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+#myChallengeWrap .headerWrap .nav1 {
+    display: flex;
+    width: 60%;
+}
+
+#myChallengeWrap .headerWrap .nav1>div {
+    width: 24%;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+#myChallengeWrap .headerWrap .nav1>div:hover {
+    color: #aaa;
+}
+
+#myChallengeWrap .headerWrap .nav1>div:first-child {
+    margin-left: 0;
+}
+
+#myChallengeWrap .headerWrap .nav2 {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#myChallengeWrap .headerWrap .nav2>div {
+    width: 48%;
+    padding: 10px;
+    text-align: center;
+}
+
+#myChallengeWrap .headerWrap .nav2 .logout {
+    background-color: #0D99FF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#myChallengeWrap .headerWrap .nav2 .logout:hover {
+    color: #fff;
+}
+#myChallengeWrap main {
+    margin-top: 80px;
+}
+#myChallengeWrap main .section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#myChallengeWrap main .section1 .nameWrap {
+    width: 100%;
+}
+#myChallengeWrap main .section1 h2 {
+    text-align: center;
+    font-size: 40px;
+    border: 1px solid #000;
+    display: block;
+    width: 450px;
+    margin: 60px auto 0px;
+    border-radius: 5px;
+}
+#myChallengeWrap main .section1 .btnWrap {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    padding: 0 10px;
+}
+#myChallengeWrap main .section1 .btnWrap  >a {
+    padding: 10px 40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+#myChallengeWrap main .section1 .successWrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+#myChallengeWrap main .section1 .successWrap p {
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+#myChallengeWrap main .section2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 10%;
+}
+#myChallengeWrap main .section2 h4 {
+    width: 60%;
+    font-size: 20px;
+}
+#myChallengeWrap main .section2 .notice {
+    width: 30%;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+#myChallengeWrap main .section2 .notice:hover::before{
+    content: "각각의 목표에 설정된 목표달성 시간에 따른 달성확률을 보여줍니다";
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 10px;
+    color: #000;
+}
+#myChallengeWrap main .section2 .listWrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#myChallengeWrap main .section2 .listWrap .leftlist {
+    width: 60%;
+    height: 50px;
+    border: 1px solid #000;
+    position: relative;
+}
+#myChallengeWrap main .section2 .listWrap .leftlist .inner {
+    width: 30%;
+    height: 49px;
+    box-sizing: content-box;
+    background-color: #0D99FF;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+#myChallengeWrap main .section2 .listWrap .leftlist >p,
+#myChallengeWrap main .section2 .listWrap .leftlist >span {
+    color: #000;
+}
+#myChallengeWrap main .section2 .listWrap .leftlist .name{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+#myChallengeWrap main .section2 .listWrap .leftlist .per {
+    position: absolute;
+    right: 100px;
+    top: 0;
+}
+#myChallengeWrap main .section2 .listWrap .leftlist .date {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+#myChallengeWrap main .section2 .listWrap .leftlist .time {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+#myChallengeWrap main .section2 .listWrap .leftlist .icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-image: url(edit.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#myChallengeWrap main .section2 .listWrap .rightlist {
+    width: 30%;
+    height: 50px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+#myChallengeWrap main .section2 .listWrap .rightlist .inner {
+    position: absolute;
+    width: 30%;
+    height: 49px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #14AE5C;
+    z-index: -1;
+}
+#myChallengeWrap main .section2 .listWrap .rightlist > p {
+    font-size: 15px;
+    font-weight: bold;
+}
+#myChallengeWrap main .section2 .listWrap .rightlist .rigthPer {
+    
+}
+#myChallengeWrap main .section2 .listWrap .rightlist .modiIcon {
+    background-image: url(more.svg);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#myChallengeWrap main .section2 .listWrap .rightlist .modiIcon .modiIconWrap {
+    position: absolute;
+    bottom: -140px;
+    right: -80px;
+    width: 80px;
+    display: none;
+    z-index: 1000;
+}
+#myChallengeWrap main .section2 .listWrap .rightlist .modiIcon  a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #000;
+    text-align: center;
+}
+#myChallengeWrap main .section3 {
+    margin: 100px 0;
+}
+#myChallengeWrap main .section3 .section3Wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#myChallengeWrap main .section3 .successShow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#myChallengeWrap main .section3 .section3Wrap .successShow > h5 {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 50px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: red;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner {
+    width: 100%;
+    margin: 50px 10% 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #afd3ec;
+    padding: 20px;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap {
+    width: 10%;
+    min-height: 500px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .WeekDate {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .week {
+    padding: 10px 0 20px;
+    font-size: 30px;
+    position: relative;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .week::before{
+    content: "";
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    height: 2px;
+    background-color: #000;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .date {
+    padding: 20px 0;
+    color: #0D99FF;
+    font-weight: bold;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .mychallengeWeek {
+    border-radius: 5px;
+    width: 90%;
+    margin: 10px auto;
+    background-color: #14AE5C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    color: #fff;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .mychallengeWeek:nth-of-type(6){
+    background-color: #F24822;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .mychallengeWeek:nth-of-type(7){
+    background-color: #9747FF;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .mychallengeWeek:nth-of-type(8){
+    background-color: #FFCD29;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .mychallengeWeek:nth-of-type(9){
+    background-color: #0D99FF;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .mychallengeWeek > p {
+    font-size: 0.8vw;
+    margin-right: 20px;
+}
+#myChallengeWrap main .section3 .section3Wrap .section3Inner .weekWrap .mychallengeWeek .inner > p{
+    font-size: 0.6vw;
+}
+#myChallengeWrap main .section4 {
+    margin: 100px 0;
+}
+#myChallengeWrap main .section4  .section4Wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10%;
+}
+#myChallengeWrap main .section4  .section4Wrap .section4DateWrap {
+    width: 100%;
+}
+#myChallengeWrap main .section4  .section4Wrap .section4DateWrap > p {
+    width: 100%;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 1vw;
+}
+#myChallengeWrap main .section4  .section4Wrap .section4DateWrap > p >em {
+    padding: 0 30px;
+    font-weight: normal;
+}
+#myChallengeWrap main .section4  .section4Wrap table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 100px 0;
+}
+
+#myChallengeWrap main .section4  .section4Wrap thead tr, tbody tr {
+    border-bottom: 1px solid #000;
+}
+
+#myChallengeWrap main .section4  .section4Wrap th, td {
+    text-align: center;
+    border: 1px solid #000;
+    height: 100px;
+}
+
+#myChallengeWrap main .section4  .section4Wrap th {
+    background-color: #fafafa;
+}
+.active {
+    color: #fff;
+    background-color: #0D99FF;
+}

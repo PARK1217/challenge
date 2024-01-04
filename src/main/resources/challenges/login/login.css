@@ -1,0 +1,208 @@
+input[type="checkbox"]{
+    width: 30px; /*Desired width*/
+    height: 20px; /*Desired height*/
+    cursor: pointer;
+}
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    height: 50px;
+}
+
+#wrap{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+}
+#wrap .container {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+#wrap .container .logo {
+    width: 50%;
+    height: inherit;
+    background: #9bbddd;
+    overflow: hidden;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#wrap .container .inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#wrap .container .inner .desc {
+    color: #fff;
+    padding-bottom: 60px;
+}
+#wrap .container .inner .desc h2 {
+    font-size: 1.5em;
+    position: relative;
+}
+#wrap .container .inner .desc h2::before{
+    content: "";
+    display: block;
+    width: 40%;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+#wrap .container .inner .desc p {
+    padding-top: 50px;
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+#wrap .container .login {
+    width: 50%;
+    height: inherit;
+    border: 1px solid #222;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-sizing: border-box;
+    border-left: none;
+}
+#wrap .container .login form {
+    padding: 30px;
+    width: 100%;
+}
+#wrap .container .login .login_header {
+    width: 100%;
+    /*border: 1px solid #000;*/
+    margin-top: 50px;
+}
+#wrap .container .login .login_header h2 {
+    width: 30%;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-weight: normal;
+    position: relative;
+}
+#wrap .container .login .login_header h2::before{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 5px;
+    background: #00bfba;
+    position: absolute;
+    left: 40%;
+    bottom: -15px;
+}
+#wrap .container .login .login_main {
+    /*border:  1px solid #999;*/
+    /*height: 300px;*/
+    padding: 50px 50px 0px 50px;
+}
+#wrap .container .login .login_main .label {
+    position: absolute;
+    top: -9999px;
+    overflow: hidden;
+}
+#wrap .container .login .login_main .input_inner {
+    padding-top: 20px;
+}
+#wrap .container .login .login_main .input_inner input {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #aab2bd;
+}
+#wrap .container .login .login_main .input_inner input::placeholder{
+    color: #aaa;
+    font-size: 1.2em;
+}
+/* #wrap .container .login .login_main .input_check {
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+#wrap .container .login .login_main .input_check input {
+    border: 1px solid #000;
+}
+#wrap .container .login .login_main .input_check input:checked {
+    background-image: url("../../images1/ico-chk-on.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#wrap .container .login .login_main .input_check label {
+    font-size: 0.8em;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+#wrap .container .login .login_main .main_desc {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+#wrap .container .login .login_main .main_desc span {
+    display: block;
+    margin-top: 10px;
+    padding-left: 12px;
+    color: #aaa;
+    font-weight: 100;
+}
+#wrap .container .login .login_main .login_button {
+    margin-top: 50px;
+    text-align: center;
+}
+#wrap .container .login .login_main .login_button button {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 50px;
+    background-color: #247CFF;
+    color: #fff;
+    font-size: 1vw;
+    cursor: pointer;
+}
+/* #wrap .container .login .login_main .auth {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#wrap .container .login .login_main .auth label {
+    width: 20%;
+    font-size: 1vw;
+    text-align: center;
+}
+#wrap .container .login .login_main .auth input {
+    width: 40%;
+}
+#wrap .container .login .login_main .auth button {
+    width: 30%;
+    background: #ffca08;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1vw;
+    color: #fff;
+} */
+#videobcg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}

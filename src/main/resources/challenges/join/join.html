@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>챌린지</title>
+    <link rel="stylesheet" type="text/css" href="join.css">
+    <link rel="stylesheet" type="text/css" href="../reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="join.js"></script>
+    <script>
+        $(function(){
+            joinInit1()
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="logo">
+                <div class="inner">
+                    <div class="desc">
+                        <h2 class="h2_desc">챌린지 약속이행 시스템</h2>
+                        <p class="p_desc">주어진 기간 동안 특정 목표를 달성해 주세요</p>
+                    </div>
+                </div>
+            </div>
+            <div class="login">
+                <form method="post">
+                    <div class="login_header">
+                        <h2>회원가입</h2>
+                        <div class="nickwrap">
+                            <label for="nick">닉네임</label>
+                            <input type="text" id="nick" name="nick" maxlength="50">
+                            <a href="#">중복체크</a>
+                        </div>
+                        <div class="emailrap">
+                            <label for="email">이메일</label>
+                            <input type="text" id="email" name="email" maxlength="50">
+                            <a href="#">중복체크</a>
+                        </div>
+                        <div class="passwordwrap">
+                            <label for="pw1">비밀번호</label>
+                            <input type="password" id="pw1" name="pw1" maxlength="50">
+                        </div>
+                        <div class="passwordwrap repassword">
+                            <label for="pw2">비밀번호 확인</label>
+                            <input type="password" id="pw2" name="pw2" maxlength="50">
+                        </div>
+                        <button>로그인</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

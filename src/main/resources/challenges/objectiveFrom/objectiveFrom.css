@@ -1,0 +1,225 @@
+#objectiveFromWrap {
+    width: 100%;
+}
+#objectiveFromWrap header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.container{
+    width: 1200px;
+}
+#objectiveFromWrap .headerWrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+#objectiveFromWrap .headerWrap .nav1 {
+    display: flex;
+    width: 60%;
+}
+#objectiveFromWrap .headerWrap .nav1 >div {
+    width: 24%;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+#objectiveFromWrap .headerWrap .nav1 >div:hover{
+    color: #fff;
+}
+#objectiveFromWrap .headerWrap .nav1 >div:first-child{
+    margin-left: 0;
+}
+#objectiveFromWrap .headerWrap .nav2 {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+#objectiveFromWrap .headerWrap .nav2 > div {
+    width: 48%;
+    padding: 10px;
+    text-align: center;
+}
+#objectiveFromWrap .headerWrap .nav2 .logout {
+    background-color: #0D99FF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#objectiveFromWrap .headerWrap .nav2 .logout:hover{
+    color: #fff;
+}
+#objectiveFromWrap main {
+    margin-top: 80px;
+    width: 100%;
+}
+#objectiveFromWrap main .container {
+    margin: 0 auto;
+}
+#objectiveFromWrap main label {
+    width: 100%;
+    font-size: 0.9vw;
+    margin-top: 40px;
+}
+#objectiveFromWrap main h3 {
+    font-size: 0.9vw;
+    margin-top: 30px;
+}
+#objectiveFromWrap .colorSelect {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#objectiveFromWrap .colorSelect > div {
+    width: 10%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#objectiveFromWrap .colorSelect > div > em {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-top: 10px;
+}
+#objectiveFromWrap .labelEm {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+#objectiveFromWrap .labelEm >label {
+    width: auto;
+    margin-top: auto;
+}
+#objectiveFromWrap .labelEm > span {
+    color: #f01;
+    font-size: 0.6vw;
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#objectiveFromWrap .selectlistWrap {
+    width: 100%;
+}
+#objectiveFromWrap .selectlistWrap h5 {
+    display: block;
+    margin: 20px 0;
+    font-size: 0.9vw;
+}
+#objectiveFromWrap .selectlistWrap .termWrap > a{
+    padding: 10px 30px;
+    background-color: #0D99FF;
+    border-radius: 20px;
+    color: #fff;
+} 
+#objectiveFromWrap .selectlistWrap .termWrap > a:hover {
+    color: #000;
+}
+#objectiveFromWrap .selectlistWrap .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#objectiveFromWrap .selectlistWrap .date > input {
+    display: none;
+}
+#objectiveFromWrap .selectlistWrap .date > label{
+    width: 70px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    margin-top: auto;
+    text-align: center;
+    border: 1px solid #777;
+    margin-right: 30px;
+}
+#objectiveFromWrap .selectlistWrap .date > input:checked + label {
+    background-color: #0D99FF;
+    color: #fff;
+}
+.selectWrap {
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 150px;
+   margin-top: 20px;
+}
+.selectWrap span {
+    margin: 0 10px;
+}
+.selectWrap .Allselect, .selectWrap .Weekselect  {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-bottom: none;
+    appearance: auto;
+}
+.selectlistWrap .btnWrap {
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+}
+.selectlistWrap .btnWrap > a {
+    padding: 10px 30px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+.selectlistWrap .btnWrap > a:last-child {
+    margin-left: 20px;
+}
+.selectlistWrap .btnWrap > a:hover{
+    background-color: #777;
+    color: #fff;
+}
+.objective-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.modalOpen {
+    color: #0D99FF;
+    font-weight: bold;
+}
+.objective-modal >div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    padding: 30px;
+    line-height: 2;
+
+}
+.objective-modal >div >a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid #000;
+}
+.objective-modal >div >a:hover{
+    background-color: #777;
+    color: #fff;
+}
